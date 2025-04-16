@@ -1,0 +1,80 @@
+.high-cost {
+    background-color: rgba(255, 255, 0, 0.46);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+/* Estilos do Modal (Pop-up) */
+.modal-content {
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Personalização dos inputs do formulário */
+form input,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Adiciona uma transição suave nas mudanças de cor */
+.action-buttons button {
+    padding: 8px 12px;  /* Padding consistente para maior conforto */
+    font-size: 16px;
+    height: 40px;  /* Altura consistente para todos os botões */
+    width: 40px;   /* Largura consistente para todos os botões */
+    border-radius: 5px;  /* Borda suave */
+    cursor: pointer;
+    background-color: transparent; /* Fundo transparente por padrão */
+    border: 1px solid transparent; /* Borda invisível */
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Centraliza o conteúdo (ícones) */
+    transition: all 0.3s ease;  /* Transição suave para todas as propriedades */
+}
+
+/* Efeito de hover no botão de Editar */
+.edit-btn {
+    color: #ffc107; /* Cor inicial do ícone de edição */
+}
+
+.edit-btn:hover {
+    color: #e0a800; /* Cor do ícone no hover */
+    background-color: rgba(255, 193, 7, 0.1); /* Fundo suave ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+/* Adicionando o efeito de hover especificamente para o ícone dentro do botão */
+.edit-btn:hover i {
+    color: #e0a800; /* Mudança na cor do ícone */
+}
+
+/* Efeito de hover no botão de Excluir */
+.delete-btn {
+    color: #dc3545; /* Cor inicial do ícone de exclusão */
+}
+
+.delete-btn:hover {
+    color: #c82333; /* Cor do ícone no hover */
+    background-color: rgba(220, 53, 69, 0.1); /* Fundo suave ao passar o mouse */
+    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+/* Adicionando o efeito de hover especificamente para o ícone dentro do botão */
+.delete-btn:hover i {
+    color: #c82333; /* Mudança na cor do ícone */
+}
