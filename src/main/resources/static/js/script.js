@@ -103,3 +103,20 @@ document.querySelectorAll('.btn-down').forEach(button => {
         }
     });
 });
+
+const inputFormatado = document.getElementById("custoFormatado");
+const inputReal = document.getElementById("custo");
+
+inputFormatado.addEventListener("input", () => {
+    let valor = inputFormatado.value.replace(/[^\d]/g, "");
+
+    if (valor.length < 3) {
+        valor = valor.padStart(3, "0");
+    }
+
+    const reais = valor.slice(0, valor.length - 2);
+    const centavos = valor.slice(-2);
+
+    inputFormatado.value = `R$ ${parseInt(reais).toLocaleString("pt-BR")},${centavos}`;
+    inputReal.value = `${parseInt(reais)}.${centavos}`;
+});

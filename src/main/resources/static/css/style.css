@@ -1,6 +1,49 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+
 .high-cost {
     background-color: rgba(255, 255, 0, 0.46);
 }
+
+.container h2,
+.container h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+form,
+.table {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
 
 .action-buttons {
     display: flex;
@@ -14,67 +57,89 @@
 }
 
 /* Personalização dos inputs do formulário */
-form input,
 form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    box-sizing: border-box;
-}
-
-form button {
-    background-color: #4CAF50;
+    background-color: #4f46e5;
     color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #3730a3;
+}
+
+
+form input {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+    outline: none;
+}
+
+
+.valor {
+    text-align: right;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #1e40af !important;
 }
 
 /* Adiciona uma transição suave nas mudanças de cor */
 .action-buttons button {
-    padding: 8px 12px;  /* Padding consistente para maior conforto */
+    padding: 8px 12px;
     font-size: 16px;
-    height: 40px;  /* Altura consistente para todos os botões */
-    width: 40px;   /* Largura consistente para todos os botões */
-    border-radius: 5px;  /* Borda suave */
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: transparent; /* Fundo transparente por padrão */
-    border: 1px solid transparent; /* Borda invisível */
+    background-color: transparent;
+    border: 1px solid transparent;
     display: flex;
     align-items: center;
-    justify-content: center;  /* Centraliza o conteúdo (ícones) */
-    transition: all 0.3s ease;  /* Transição suave para todas as propriedades */
+    justify-content: center;
+    transition: all 0.3s ease;
 }
 
 /* Efeito de hover no botão de Editar */
 .edit-btn {
-    color: #ffc107; /* Cor inicial do ícone de edição */
+    color: #ffc107;
 }
 
 .edit-btn:hover {
-    color: #e0a800; /* Cor do ícone no hover */
-    background-color: rgba(255, 193, 7, 0.1); /* Fundo suave ao passar o mouse */
-    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+    color: #e0a800;
+    background-color: rgba(255, 193, 7, 0.1);
+    transform: scale(1.1);
 }
 
 /* Adicionando o efeito de hover especificamente para o ícone dentro do botão */
 .edit-btn:hover i {
-    color: #e0a800; /* Mudança na cor do ícone */
+    color: #e0a800;
 }
 
 /* Efeito de hover no botão de Excluir */
 .delete-btn {
-    color: #dc3545; /* Cor inicial do ícone de exclusão */
+    color: #dc3545;
 }
 
 .delete-btn:hover {
-    color: #c82333; /* Cor do ícone no hover */
-    background-color: rgba(220, 53, 69, 0.1); /* Fundo suave ao passar o mouse */
-    transform: scale(1.1); /* Aumenta um pouco o tamanho ao passar o mouse */
+    color: #c82333;
+    background-color: rgba(220, 53, 69, 0.1);
+    transform: scale(1.1);
 }
 
 /* Adicionando o efeito de hover especificamente para o ícone dentro do botão */
 .delete-btn:hover i {
-    color: #c82333; /* Mudança na cor do ícone */
+    color: #c82333;
+}
+
+#editModal,
+#deleteModal {
+    align-content: center;
 }
